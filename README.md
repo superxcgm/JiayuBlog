@@ -1,5 +1,5 @@
 # JiayuBlog
-Java course design.
+Java course design.<br />
 develop by superxc.com 20160701.
 
 ###已经实现的功能
@@ -39,29 +39,22 @@ develop by superxc.com 20160701.
 以下是数据库用的表:
 user表 用于用户信息的维护, 查询, 登录
 
-create table userInfo(uid int primary key, userName char(20), 
-                     userPasswd char(20), nickName char(20), phoneNumber char(20),
-                     profile varchar(100), followCnt int, fansCnt int, microCnt int, headImage varchar(500));
+create table userInfo(uid int primary key, userName char(20), userPasswd char(20), nickName char(20), phoneNumber char(20), profile varchar(100), followCnt int, fansCnt int, microCnt int, headImage varchar(500));
+（已经创建）<br />
+headImage如果是有效的url则为用户自定义的头像, 为数字则为系统内建头像.<br />
+follow表 用于记录用户之间的关注关系.(fan 关注star), 关注的时间<br />
+create table follow(fanId int, starId int, followTime varchar(50))<br />
+microBlog表 用于记录所有用户发的微博(已经创建)<br />
+create table microBlog(blogId int primary key, uid int, blogContent varchar(128), commentCnt int, imageUrl varchar(500),rePostCnt int, postTime varchar(50), niceCnt int);<br />
+commentBlog表 用于记录微博的评论(已经创建)<br />
+create table commentBlog(blogId int, uid int, commentConent varchar(64));<br />
+udi指示了谁评论的,<br />
+sysBlog 表用于记录系统信息：(已经创建)<br />
+create table sysBlog(pName char(50) ,pValue varchar(200), lValue int);<br />
 
-（已经创建）
-headImage如果是有效的url则为用户自定义的头像, 为数字则为系统内建头像.
+属性名，参数1, 参数2<br />
+'userCnt', '',1000    记录用户数，用户id依赖这个，从1001开始有效<br />
+'blogCnt','',1000    记录微博数， 微博id依赖这个， 从1001开始有效<br />
 
-follow表 用于记录用户之间的关注关系.(fan 关注star), 关注的时间
-create table follow(fanId int, starId int, followTime varchar(50))
-microBlog表 用于记录所有用户发的微博(已经创建)
-create table microBlog(blogId int primary key, uid int, blogContent varchar(128),  
-                       commentCnt int, imageUrl varchar(500),rePostCnt int, postTime varchar(50), niceCnt int);
-
-commentBlog表 用于记录微博的评论(已经创建)
-create table commentBlog(blogId int, uid int, commentConent varchar(64));
-udi指示了谁评论的,
-
-sysBlog 表用于记录系统信息：(已经创建)
-create table sysBlog(pName char(50) ,pValue varchar(200), lValue int);
-
-属性名，参数1, 参数2
-'userCnt', '',1000    记录用户数，用户id依赖这个，从1001开始有效
-'blogCnt','',1000    记录微博数， 微博id依赖这个， 从1001开始有效
-
-效果截图
+效果截图<br />
 ![JiayuBlog](main2.png)
