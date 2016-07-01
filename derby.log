@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Jun 30 21:59:16 CST 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0155-a19b-3cec-000006ce77a8 
+on database directory /home/superxc/Documents/code/javaCls/JiayuBlog/superxc with class loader sun.misc.Launcher$ExtClassLoader@378fd1ac 
+Loaded from file:/opt/java/jdk1.8.0_91/jre/lib/ext/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_91-b14
+user.dir=/home/superxc/Documents/code/javaCls/JiayuBlog
+os.name=Linux
+os.arch=amd64
+os.version=4.2.0-38-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
