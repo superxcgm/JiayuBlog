@@ -64,4 +64,4 @@ create table sysBlog(pName char(50) ,pValue varchar(200), lValue int);
 'blogCnt','',1000    记录微博数， 微博id依赖这个， 从1001开始有效
 
 效果截图
-![JiayuBlog](main2.png"JiayuBlog")
+![JiayuBlog](main2.png)
