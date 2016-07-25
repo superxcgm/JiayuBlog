@@ -1,6 +1,7 @@
 # JiayuBlog
 Java course design.<br />
 develop by superxc.com 20160701.
+开发环境为ubuntu+vim, 在windows 记事本打开可能会有乱码和换行问题。
 
 ###已经实现的功能
 * 微博发表
